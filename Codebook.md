@@ -1,6 +1,6 @@
-##Averages of the means and standard deviations for Samsung phone data grouped by subject and activity type
+#Averages of the means and standard deviations for Samsung phone data grouped by subject and activity type
 
-#Study design
+##Study design
 Data was downloaded from the following URL:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
@@ -12,5 +12,6 @@ From the allData table, all means and standard deviation columns were preserved,
 The subject and the activity columns were also preserved and later the data was grouped by these columns
 in order to compute the averages.
 
-#Code book
+##Code book
+Here is a description of the columns in the tidy data set:
 
