@@ -1,0 +1,93 @@
+Averages of the means and standard deviations for Samsung phone data grouped by subject and activity type
+
+Study design
+
+Data was downloaded from the following URL:
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+The test data set was read and combined with the subject, activity types, and features files. Similarly,
+the training data set was read into a different table. Afterwards both tables, test and training were
+combined into a single allData table, which was further processed.
+
+From the allData table, all means and standard deviation columns were preserved, and the rest dropped.
+The subject and the activity columns were also preserved and later the data was grouped by these columns
+in order to compute the averages.
+
+Code book
+
+Here is a description of the columns in the tidy data set:
+
+Name                             Type        Values
+activity                         categorical 1 WALKING
+                                             2 WALKING_UPSTAIRS
+                                             3 WALKING_DOWNSTAIRS
+                                             4 SITTING
+                                             5 STANDING
+                                             6 LAYING
+subject                          ordinal     1 to 30
+tBodyAcc.mean.X                  continuous
+tBodyAcc.mean.Y                  continuous
+tBodyAcc.mean.Z                  continuous
+tGravityAcc.mean.X               continuous
+tGravityAcc.mean.Y               continuous
+tGravityAcc.mean.Z               continuous
+tBodyAccJerk.mean.X              continuous
+tBodyAccJerk.mean.Y              continuous
+tBodyAccJerk.mean.Z              continuous
+tBodyGyro.mean.X                 continuous
+tBodyGyro.mean.Y                 continuous
+tBodyGyro.mean.Z                 continuous
+tBodyGyroJerk.mean.X             continuous
+tBodyGyroJerk.mean.Y             continuous
+tBodyGyroJerk.mean.Z             continuous
+tBodyAccMag.mean                 continuous
+tGravityAccMag.mean              continuous
+tBodyAccJerkMag.mean             continuous
+tBodyGyroMag.mean                continuous
+tBodyGyroJerkMag.mean            continuous
+fBodyAcc.mean.X                  continuous
+fBodyAcc.mean.Y                  continuous
+fBodyAcc.mean.Z                  continuous
+fBodyAccJerk.mean.X              continuous
+fBodyAccJerk.mean.Y              continuous
+fBodyAccJerk.mean.Z              continuous
+fBodyGyro.mean.X                 continuous
+fBodyGyro.mean.Y                 continuous
+fBodyGyro.mean.Z                 continuous
+fBodyAccMag.mean                 continuous
+fBodyBodyAccJerkMag.mean         continuous
+fBodyBodyGyroMag.mean            continuous
+fBodyBodyGyroJerkMag.mean        continuous
+tBodyAcc.std.X                   continuous
+tBodyAcc.std.Y                   continuous
+tBodyAcc.std.Z                   continuous
+tGravityAcc.std.X                continuous
+tGravityAcc.std.Y                continuous
+tGravityAcc.std.Z                continuous
+tBodyAccJerk.std.X               continuous
+tBodyAccJerk.std.Y               continuous
+tBodyAccJerk.std.Z               continuous
+tBodyGyro.std.X                  continuous
+tBodyGyro.std.Y                  continuous
+tBodyGyro.std.Z                  continuous
+tBodyGyroJerk.std.X              continuous
+tBodyGyroJerk.std.Y              continuous
+tBodyGyroJerk.std.Z              continuous
+tBodyAccMag.std                  continuous
+tGravityAccMag.std               continuous
+tBodyAccJerkMag.std              continuous
+tBodyGyroMag.std                 continuous
+tBodyGyroJerkMag.std             continuous
+fBodyAcc.std.X                   continuous
+fBodyAcc.std.Y                   continuous
+fBodyAcc.std.Z                   continuous
+fBodyAccJerk.std.X               continuous
+fBodyAccJerk.std.Y               continuous
+fBodyAccJerk.std.Z               continuous
+fBodyGyro.std.X                  continuous
+fBodyGyro.std.Y                  continuous
+fBodyGyro.std.Z                  continuous
+fBodyAccMag.std                  continuous
+fBodyBodyAccJerkMag.std          continuous
+fBodyBodyGyroMag.std             continuous
+fBodyBodyGyroJerkMag.std         continuous
